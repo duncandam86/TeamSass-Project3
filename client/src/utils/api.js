@@ -2,12 +2,11 @@ import axios from "axios";
 
 require("dotenv").config();
 
-const BASEURL = "https://api.giphy.com/v1/gifs/search?q=";
-const APIKEY = "&api_key=dc6zaTOxFJmzC&limit=20";
+const BASEURL = "https://api.yelp.com/v3/businesses/search";
+// const APIKEY = "&api_key=dc6zaTOxFJmzC&limit=20";
 
-// Export an object with a "search" method that searches the Giphy API for the passed query
 export default {
   search: function(query) {
-    return axios.get(BASEURL + query + APIKEY);
+    return axios.get(BASEURL + query);
   }
 };
