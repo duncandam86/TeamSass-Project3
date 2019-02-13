@@ -14,9 +14,9 @@ import axios from "axios";
 
 export default {
     // Get dining from yelp search 
-    getSearchDining: function (term, location) {
-        let appId = process.env.appId;
-        let appKey = process.env.appKey;
+    getYelp: function (term, location) {
+        // let appId = process.env.appId;
+        // let appKey = process.env.appKey;
         const URL = "https://api.yelp.com/v3/businesses/search" + term + location;
         console.log(URL)
         return axios.get(URL)
