@@ -17,6 +17,11 @@ form {
     outline-offset: 5px
 }
 
+#city {
+    width: 45%;
+    float: left;
+}
+
 #date {
     width: 30%;
     float: left

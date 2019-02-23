@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Icon} from "react-materialize";
+import {Button, Icon, DatePicker} from "react-materialize";
 import "./style.css";
 
 const SearchFlightForm = props => {
@@ -9,7 +9,7 @@ const SearchFlightForm = props => {
             <br></br>
         <form class="form">
             <div className="row">
-                <div className="form-group">
+                <div className="form-group" id="city">
                     <label className="DepartureCity"><h5>Departure City</h5></label>
                     <input className="col-4 form-control"
                         value={props.departure}
@@ -20,7 +20,7 @@ const SearchFlightForm = props => {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" id="city">
                     <label className="DepartureCity"><h5>Arrival City</h5></label>
                         <input className="col-4 form-control"
                         value1={props.arrival}
@@ -37,7 +37,11 @@ const SearchFlightForm = props => {
                 </div>
             <br></br>
 
-            <div className="row">
+{/* date picker */}
+        <DatePicker placeholderText="Click to select a date" />
+
+{/* to remove later? */}
+            {/* <div className="row">
                 <div className="form-group" id="date">
                     <label className="DepartureYear"><h5>Departure Year</h5></label>
                     <input className="col-4 form-control"
@@ -71,7 +75,7 @@ const SearchFlightForm = props => {
                         onChange={props.handleInputChange}
                     />
                 </div>
-            </div>
+            </div> */}
             <button type="submit" className="submitBtn btn btn-primary" id="submit" onClick={props.handleFormSubmit}>
                 Submit
             </button>
