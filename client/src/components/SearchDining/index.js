@@ -12,7 +12,7 @@ const SearchDining = props => {
             <div className="form-group">
                 <label className="DiningSearchTerm" id="dining"><p1>What would you like to find?</p1></label>
                 <br></br>
-                <input className="col-12 form-control"
+                <input className="col-12 form-control" id="inputs"
                     value={props.term}
                     type="text"
                     name="term"
@@ -21,7 +21,7 @@ const SearchDining = props => {
                 />
             </div>
             <div className="form-group">
-                <input className="col-12 form-control"
+                <input className="col-12 form-control" id="inputs"
                     value={props.location}
                     type="text"
                     name="location"

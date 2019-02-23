@@ -1,29 +1,28 @@
 h1 {
-    color: purple
+    color: purple;
+    font-size: 25pt;
+}
+
+.p1 {
+    font-size: 15pt;
+}
+
+.container {
+    padding-bottom: 20px;
 }
 
 form {
     outline-style: solid;
     outline-color: grey;
     outline-offset: 20px;
-}
-
-.form-group {
-    padding: 15px
+    font-size: 20pt;
 }
 
 #dining {
-    font-size: 30pt;
+    font-size: 25pt;
 }
 
 #submit {
     background-color: purple;
+    font-size: 15pt;
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
