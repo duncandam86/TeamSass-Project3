@@ -1,45 +1,34 @@
 {
-  "name": "mern",
-  "version": "0.1.0",
-  "description": "Mern Demo",
-  "private": true,
-  "proxy": "http://localhost:3001/",
-  "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "axios": "^0.18.0",
-    "dayz": "^2.3.0",
-    "dotenv": "^6.2.0",
-    "moment": "^2.24.0",
-    "react": "^16.6.3",
-    "react-agenda": "^0.0.8",
-    "react-dom": "^16.6.3",
-    "react-materialize": "^2.6.0",
-    "react-native": "^0.58.5",
-    "react-native-calendars": "^1.22.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.0-next.3e165448",
-<<<<<<< HEAD
-    "react-sticky": "^6.0.3"
-=======
-    "react-swipeable-views": "^0.13.1"
->>>>>>> development
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "development": [
-      "last 2 chrome versions",
-      "last 2 firefox versions",
-      "last 2 edge versions"
-    ],
-    "production": [
-      ">0.25%",
-      "not op_mini all",
-      "ie 11"
-    ]
-  }
+	"name": "mern",
+	"version": "0.1.0",
+	"description": "Mern Demo",
+	"private": true,
+	"proxy": "http://localhost:3001/",
+	"dependencies": {
+		"@material-ui/core": "^3.9.2",
+		"axios": "^0.18.0",
+		"dayz": "^2.3.0",
+		"dotenv": "^6.2.0",
+		"moment": "^2.24.0",
+		"react": "^16.6.3",
+		"react-agenda": "^0.0.8",
+		"react-dom": "^16.6.3",
+		"react-materialize": "^2.6.0",
+		"react-native": "^0.58.5",
+		"react-native-calendars": "^1.22.0",
+		"react-router-dom": "^4.3.1",
+		"react-scripts": "2.0.0-next.3e165448",
+		"react-sticky": "^6.0.3",
+		"react-swipeable-views": "^0.13.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"browserslist": {
+		"development": [ "last 2 chrome versions", "last 2 firefox versions", "last 2 edge versions" ],
+		"production": [ ">0.25%", "not op_mini all", "ie 11" ]
+	}
 }

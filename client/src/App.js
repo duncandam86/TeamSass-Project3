@@ -12,6 +12,7 @@ import ItineraryTable from "./components/ItineraryTable";
 import Signup from "./pages/Sign-up";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Landing from "./components/Landing";
 // import Itinerary from "./pages/Itinerary";
 
 
@@ -68,6 +69,7 @@ class App extends Component {
             <Route exact path="/dining" component={DiningSearch} />
             <Route exact path="/activity" component={ActivitySubmit} />
             <Route exact path="/itinerary" component={ItineraryTable} />
+            <Route exact path="/landing" component={Landing} />
           <Footer />
         </div>
       </Router>
