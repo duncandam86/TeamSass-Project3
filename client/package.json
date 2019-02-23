@@ -18,7 +18,11 @@
     "react-native-calendars": "^1.22.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.0-next.3e165448",
+<<<<<<< HEAD
     "react-sticky": "^6.0.3"
+=======
+    "react-swipeable-views": "^0.13.1"
+>>>>>>> development
   },
   "scripts": {
     "start": "react-scripts start",
