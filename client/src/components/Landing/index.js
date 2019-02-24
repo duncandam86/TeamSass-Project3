@@ -47,7 +47,7 @@ function Landing() {
 	// Notice how each input has a `value`, `name`, and `onChange` prop
 	return (
 		<div>
-			<div id="jumbotron" backgroundImage="./beach-1.jpg">
+			<div id="jumbotron">
 				<h2 style={{ marginTop: 150, marginBottom: 50 }}>On The FLy</h2>
 				<div className="register" >
 					<form className="form">
