@@ -137,14 +137,9 @@
 // export default withStyles(styles, { withTheme: true })(SwipeableTextMobileStepper);
 
 
-
-
-
-
-
-
 import React from 'react';
 import {Carousel} from 'react-materialize';
+import "./style.css";
 import Madrid from '../../images/madrid.jpg';
 import Japan from '../../images/japan.jpg';
 import Chicago from '../../images/chicago.jpg';
@@ -155,14 +150,20 @@ import Chicago from '../../images/chicago.jpg';
 function Mycarousel () {
     console.log('this is the carosel', Carousel);
     return (
+       <> 
+       
         <div className="cdiv1">
-            
-            <Carousel options={{ fullWidth: true }} images={[
+       <h1>Welcome to On the Fly</h1>
+            <Carousel id="carousel" options={{ fullWidth: true }} images={[
             Madrid,
             Japan,
             Chicago,
             ]} />
-</div>
+      
+
+        </div>
+    </>
+
     );
 }
 
