@@ -1,65 +1,81 @@
-// import React from 'react';
+import React, { Component } from 'react';
+import './style.css';
+// class Landing extends Component {
+//   // Setting the component's initial state
+//   state = {
+//     firstName: "",
+//     lastName: "",
+//     password: ""
+//   };
 
-// import Beach from '../../images/beach-1.jpg';
+//   handleInputChange = event => {
+//     // Getting the value and name of the input which triggered the change
+//     let value = event.target.value;
+//     const name = event.target.name;
 
+//     if (name === "password") {
+//       value = value.substring(0, 15);
+//     }
+//     // Updating the input's state
+//     this.setState({
+//       [name]: value
+//     });
+//   };
 
-// function Landing () {
-//     return (
-//         <div className="row">
-//         <div className="img">
-//           <img src={Beach} width="100" height="50" />
-//         </div>
-//       </div>
-//     );
-// }
+//   handleFormSubmit = event => {
+//     // Preventing the default behavior of the form submit (which is to refresh the page)
+//     event.preventDefault();
+//     if (!this.state.firstName || !this.state.lastName) {
+//       alert("Fill out your first and last name please!");
+//     } else if (this.state.password.length < 6) {
+//       alert(
+//         `Choose a more secure password ${this.state.firstName} ${this.state
+//           .lastName}`
+//       );
+//     } else {
+//       alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
+//     }
 
-// export default Landing
+//     this.setState({
+//       firstName: "",
+//       lastName: "",
+//       password: ""
+//     });
+//   };
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-const styles = {
-  card: {
-    maxWidth: 1000,
-  },
-  media: {
-    height: 200,
-  },
-};
-
-function Landing(props) {
-  const { classes } = props;
-  return (
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="../../images/beach-1.jpg"
-          title="Contemplative Reptile"
-        />
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Sign Up 
-        </Button>
-        <Button size="small" color="primary">
-          Login
-        </Button>
-      </CardActions>
-    </Card>
-  );
+function Landing() {
+	// Notice how each input has a `value`, `name`, and `onChange` prop
+	return (
+		<div>
+			<div id="jumbotron" backgroundImage="./beach-1.jpg">
+				<h2 style={{ marginTop: 150, marginBottom: 50 }}>On The FLy</h2>
+				<div className="register" >
+					<form className="form">
+						<input
+							// value={this.state.firstName}
+							name="userName"
+							// onChange={this.handleInputChange}
+							type="text"
+							placeholder="Username"
+						/>
+						<input
+							// value={this.state.password}
+							name="password"
+							// onChange={this.handleInputChange}
+							type="password"
+							placeholder="Password"
+						/>
+						<button
+						// onClick={this.handleFormSubmit}
+						>
+							Submit
+						</button>
+            <p><center>Join for free</center></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	);
 }
 
-Landing.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default Landing);
+export default Landing;
