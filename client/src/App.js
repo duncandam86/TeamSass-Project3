@@ -11,12 +11,9 @@ import DiningSearch from "./pages/DiningSearch";
 import Signup from "./pages/Sign-up";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-<<<<<<< HEAD
 import Landing from "./components/Landing";
 // import Itinerary from "./pages/Itinerary";
-=======
 import Itinerary from "./pages/Itinerary";
->>>>>>> development
 
 
 class App extends Component {
@@ -71,12 +68,9 @@ class App extends Component {
             <Route exact path="/flight" component={FlightSearch} />
             <Route exact path="/dining" component={DiningSearch} />
             <Route exact path="/activity" component={ActivitySubmit} />
-<<<<<<< HEAD
             <Route exact path="/itinerary" component={ItineraryTable} />
             <Route exact path="/landing" component={Landing} />
-=======
             <Route exact path="/itinerary" component={Itinerary} />
->>>>>>> development
           <Footer />
         </div>
       </Router>
