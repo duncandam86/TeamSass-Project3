@@ -3,15 +3,11 @@
     width: 180px
 }
 
-.saveRestaurant{
+.deleteRestaurant{
     margin-bottom: 10px;
-    background-color: green
+    background-color: gray
 }
 
-.DiningSearchTerm{
-    font-size: 18px;
-}
-
-.diningItemResult{
+.diningItem{
     border-radius: 10px
 }
