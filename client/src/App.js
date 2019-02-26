@@ -68,7 +68,7 @@ class App extends Component {
             <Route exact path="/flight" component={FlightSearch} />
             <Route exact path="/dining" component={DiningSearch} />
             <Route exact path="/activity" component={ActivitySubmit} />
-            <Route exact path="/itinerary" component={ItineraryTable} />
+            {/* <Route exact path="/itinerary" component={ItineraryTable} /> */}
             <Route exact path="/landing" component={Landing} />
             <Route exact path="/itinerary" component={Itinerary} />
           <Footer />
